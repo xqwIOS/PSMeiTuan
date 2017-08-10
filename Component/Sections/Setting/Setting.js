@@ -66,7 +66,11 @@ export default class extends Component {
         '15.下拉菜单隐藏',
         '16.自定义Modal展示选择',
         '17.下拉筛选选择',
-        '18.测试页面的复用'
+        '18.测试页面的复用',
+        '19.Video播放视频',
+        '20.aurora-imui-Demo',
+        '21.历史搜索实现',
+        '22.动态添加文章'
       ])
     };
     this.renderRow = this.renderRow.bind(this);
@@ -232,6 +236,26 @@ export default class extends Component {
       case '17':
       {
         this.props.navigation.navigate('TextDemo')
+        break;
+      }
+      case '18':
+      {
+        this.props.navigation.navigate('VideoDemo')
+        break;
+      }
+      case '19':
+      {
+        this.props.navigation.navigate('IMUIDemo')
+        break;
+      }
+       case '20':
+      {
+        this.props.navigation.navigate('SearchHistoryDemo')
+        break;
+      }
+       case '21':
+      {
+        this.props.navigation.navigate('AddArticelDemo')
         break;
       }
       default:

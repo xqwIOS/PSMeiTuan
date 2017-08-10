@@ -41,6 +41,10 @@ import DropDownSelectDemo from './../Sections/Setting/Demos/DropDownSelectDemo';
 
 import ZXSportDemon from './../Sections/Setting/Demos/ZXSportMenu';
 import TextDemo from './../Sections/Setting/Demos/TextDemo';
+import VideoDemo from './../Sections/Setting/Demos/VideoDemo';
+import IMUIDemo from './../Sections/Setting/Demos/IMUIDemo';
+import AddArticelDemo from './../Sections/Setting/Demos/AddArticleDemo';
+import SearchHistoryDemo from './../Sections/Setting/Demos/SearchHistoryDemo';
 
 const lightContentScenes = ['Home', 'Mine']
 
@@ -286,6 +290,18 @@ const Navigator = StackNavigator({
     },
     TextDemo: {
         screen: TextDemo
+    },
+    VideoDemo: {
+        screen: VideoDemo
+    },
+    IMUIDemo: {
+        screen: IMUIDemo
+    },
+    SearchHistoryDemo: {
+        screen: SearchHistoryDemo
+    },
+    AddArticelDemo: {
+        screen: AddArticelDemo
     }
 }, {
     navigationOptions: {

@@ -29,7 +29,7 @@ export default class extends Component {
     constructor(props, updateState) {
         super(props);
         this.props = props;
-        this.baseCommon = new BaseCommon({...props,backPress:(e)=>this.onBackPress(e)});
+        this.baseCommon = new BaseCommon({...props,backPress:(e)=>this.onBackPress(e), title: '哈哈'});
         this.updateState = updateState;
     }
     onBackPress(e){
@@ -43,15 +43,21 @@ export default class extends Component {
         this.baseCommon.componentWillUnmount();
     }
 
-    // render() {
-    //     return (
-    //         <View style={styles.container}>
-    //             <Text style={styles.welcome}>
-    //                 发现
-    //             </Text>
-    //         </View>
-    //     );
-    // }
+    render() {
+        return (
+            <View style={styles.container}>
+                <Text style={styles.welcome} onPress={this.testType.bind(this)}
+                      ref={(ref) => { this.text = ref; }}>
+                    测试组件类型
+                </Text>
+            </View>
+        );
+    }
+
+    testType() {
+        alert('测试类型');
+        // console.log(this.toString());
+    }
 }
 
 const styles = StyleSheet.create({
